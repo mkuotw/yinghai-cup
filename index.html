@@ -638,6 +638,546 @@ section{padding:80px 0}.pathways{background:#fff}.path-grid{display:grid;grid-te
   .preview-voice-mobile-title .preview-main{font-size:15.8px}
 }
 
+
+
+/* v39 desktop conversion flow — exam info + three arrows; mobile intentionally untouched */
+@media(min-width:1001px){
+  .mobile-path-link{display:none!important}
+  .desktop-event-summary{display:block;margin:-8px 0 22px;padding:13px 16px;border-radius:14px;background:#fff;border:1px solid #dbe6ef;box-shadow:0 8px 24px rgba(10,43,79,.06);max-width:620px}
+  .desktop-event-summary b{display:block;color:var(--navy);font-size:15.5px;font-weight:950;line-height:1.45;white-space:nowrap}
+  .desktop-event-summary span{display:block;margin-top:4px;color:#4f687d;font-size:13.5px;font-weight:800;line-height:1.55;white-space:nowrap}
+
+  .exam-info{padding:74px 0;background:linear-gradient(180deg,#fff 0%,#f7fbfe 100%);border-top:1px solid #e6eef4}
+  .exam-info .section-head{margin-bottom:28px}
+  .exam-layout{display:grid;grid-template-columns:1.5fr .75fr;gap:22px;align-items:stretch}
+  .exam-main{background:#fff;border:1px solid var(--line);border-radius:26px;padding:27px;box-shadow:0 16px 42px rgba(10,43,79,.08)}
+  .exam-timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+  .exam-step{position:relative;padding:20px 17px;border-radius:18px;background:#f8fbfd;border:1px solid #dce8f0;min-height:154px}
+  .exam-step:after{content:"";position:absolute;right:-9px;top:50%;width:18px;height:2px;background:#d3b367;transform:translateY(-50%)}
+  .exam-step:last-child:after{display:none}
+  .exam-step .time{display:block;color:var(--gold);font-size:14px;font-weight:950;letter-spacing:.02em}
+  .exam-step strong{display:block;color:var(--navy);font-size:21px;margin:7px 0 3px;line-height:1.3}
+  .exam-step span{display:block;color:#526b80;font-size:13.5px;line-height:1.6}
+  .exam-note-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+  .exam-note{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border-radius:999px;background:#eef5fa;border:1px solid #d8e5ee;color:#3f6079;font-size:13.5px;font-weight:850}
+  .exam-note strong{color:var(--navy)}
+  .parent-program{position:relative;overflow:hidden;border-radius:26px;padding:27px;background:linear-gradient(145deg,#123b68,#092b4f);color:#fff;box-shadow:0 16px 42px rgba(10,43,79,.18)}
+  .parent-program:after{content:"";position:absolute;width:210px;height:210px;border-radius:50%;right:-90px;bottom:-100px;background:rgba(239,210,143,.10)}
+  .parent-program .kicker{color:#f0d394}
+  .parent-program h3{font-size:27px;line-height:1.35;margin:8px 0 14px;color:#fff}
+  .parent-program p{margin:0 0 15px;color:#dce8f2;font-size:15px;line-height:1.7}
+  .parent-program .parent-slot{position:relative;z-index:2;padding:12px 0;border-top:1px solid rgba(255,255,255,.14)}
+  .parent-program .parent-slot b{display:block;color:#f0d394;font-size:13.5px;font-weight:950;letter-spacing:.01em}
+  .parent-program .parent-slot>span{display:block;margin-top:4px;color:#fff;font-size:14px;line-height:1.55}
+  .parent-topic-list{display:grid;grid-template-columns:1fr;gap:7px;margin-top:7px}
+  .parent-topic-list span{display:flex;align-items:center;min-height:34px;padding:7px 10px;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fff;font-size:13.5px;font-weight:850;line-height:1.4}
+
+  .three-arrows{padding:78px 0 82px;background:#fff}
+  .arrows-intro{display:grid;grid-template-columns:1fr auto;gap:26px;align-items:end;margin-bottom:28px}
+  .arrows-intro .section-head{margin:0}
+  .program-chips{display:grid;grid-template-columns:repeat(2,150px);gap:9px 10px;justify-content:end;align-content:end;min-width:310px}
+  .program-chips span{display:flex;align-items:center;justify-content:center;min-height:36px;padding:8px 10px;border-radius:999px;background:#f3f7fa;border:1px solid #dbe6ee;color:#365873;font-size:13px;font-weight:900;line-height:1.3;text-align:center;white-space:nowrap}
+  .arrows-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .arrow-card{position:relative;overflow:hidden;padding:25px;border-radius:23px;border:1px solid var(--line);background:#fff;box-shadow:0 12px 34px rgba(10,43,79,.065)}
+  .arrow-card:before{content:attr(data-arrow);position:absolute;right:17px;top:12px;color:#eef3f7;font-size:58px;font-weight:950;line-height:1}
+  .arrow-card .arrow-kicker{position:relative;color:var(--red);font-size:12px;font-weight:950;letter-spacing:.1em}
+  .arrow-card h3{position:relative;margin:8px 0 8px;color:var(--navy);font-size:25px;line-height:1.3}
+  .arrow-card p{position:relative;margin:0;color:#4d667b;font-size:15.5px;line-height:1.72}
+  .arrow-card .arrow-highlight{position:relative;display:inline-flex;margin-top:15px;padding:7px 10px;border-radius:10px;background:#fff7e4;color:#93661b;font-weight:950;font-size:13px;border:1px solid #edd9aa}
+  .scholarship-strip{margin-top:18px;border-radius:22px;padding:18px 20px;background:linear-gradient(135deg,#0f3865,#0a2b4e);color:#fff;display:grid;grid-template-columns:auto repeat(5,1fr);align-items:center;gap:8px;box-shadow:0 16px 34px rgba(10,43,79,.13)}
+  .scholarship-strip .label{padding-right:12px;border-right:1px solid rgba(255,255,255,.18)}
+  .scholarship-strip .label b{display:block;color:#f0d394;font-size:12px;letter-spacing:.08em}
+  .scholarship-strip .label strong{display:block;font-size:17px;margin-top:2px}
+  .prize{padding:4px 9px;text-align:center}
+  .prize b{display:block;color:#f0d394;font-size:12px}
+  .prize strong{display:block;margin-top:2px;font-size:18px;color:#fff}
+  .three-arrows-cta{display:flex;align-items:center;justify-content:space-between;gap:22px;margin-top:20px;padding:19px 22px;border-radius:18px;background:#f5f9fc;border:1px solid #dbe6ef}
+  .three-arrows-cta p{margin:0;color:#486278;font-size:15.5px;line-height:1.65}
+  .three-arrows-cta p strong{color:var(--navy)}
+  .three-arrows-cta .action{white-space:nowrap}
+}
+@media(max-width:1000px){
+  .desktop-only-section,.desktop-event-summary,.desktop-exam-link{display:none!important}
+}
+
+
+
+/* v43 desktop content polish — desktop only; mobile layout remains unchanged */
+@media(min-width:1001px){
+  /* Keep the international feature caption as a clean single line. */
+  .intl-feature-photo figcaption strong{
+    font-size:20px;
+    line-height:1.4;
+    letter-spacing:-.025em;
+    white-space:nowrap;
+  }
+
+  /* Deliberate two-line close for the final conversion paragraph. */
+  .final-box .final-copy-line{
+    display:block;
+  }
+  .final-box .final-copy-line + .final-copy-line{
+    margin-top:6px;
+  }
+  .final-box .final-copy-emphasis{
+    color:#344f68;
+    font-weight:800;
+  }
+}
+
+
+/* v44 desktop international pathway alignment — desktop only */
+@media(min-width:1001px){
+  .intl-copy .intl-points{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:10px;
+    width:100%;
+    margin-top:18px;
+  }
+  .intl-copy .intl-points span{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-width:0;
+    min-height:44px;
+    padding:8px 10px;
+    border-radius:13px;
+    background:#eef5fa;
+    border:1px solid #d5e3ed;
+    color:#3d5f7a;
+    font-size:13px;
+    font-weight:850;
+    line-height:1.25;
+    text-align:center;
+    white-space:nowrap;
+  }
+}
+
+
+
+/* v45 mobile conversion flow — mobile only; desktop v44 locked */
+@media(max-width:650px){
+  /* Bring the newly approved desktop conversion sections into the phone flow. */
+  .desktop-only-section{display:block!important}
+  .desktop-event-summary{display:block!important}
+  .desktop-exam-link{display:flex!important}
+
+  /* Hero event summary: short, highly scannable, and intentionally two lines. */
+  .desktop-event-summary{
+    margin:0 0 15px;
+    padding:12px 13px;
+    max-width:none;
+    border-radius:14px;
+    background:#fff;
+    border:1px solid #dbe6ef;
+    box-shadow:0 8px 22px rgba(10,43,79,.06);
+  }
+  .desktop-event-summary b{
+    display:block;
+    color:var(--navy);
+    font-size:14px;
+    font-weight:950;
+    line-height:1.42;
+    white-space:normal;
+  }
+  .desktop-event-summary span{
+    display:block;
+    margin-top:4px;
+    color:#4f687d;
+    font-size:12.5px;
+    font-weight:800;
+    line-height:1.55;
+    white-space:normal;
+  }
+  .hero-actions .desktop-exam-link{
+    order:1;
+    width:100%;
+    min-height:48px;
+    border-color:#d2b66f;
+    background:#fffaf0;
+    color:#7e5c1f;
+  }
+  .hero-actions .mobile-path-link{order:2}
+
+  /* Exam information: mobile vertical timeline rather than shrinking the desktop grid. */
+  .exam-info{
+    padding:50px 0;
+    background:linear-gradient(180deg,#fff 0%,#f7fbfe 100%);
+    border-top:1px solid #e6eef4;
+  }
+  .exam-info .section-head{margin-bottom:22px}
+  .exam-info .section-head h2{font-size:30px;line-height:1.25;margin:6px 0 10px}
+  .exam-layout{display:block}
+  .exam-main{
+    padding:17px;
+    border-radius:20px;
+    background:#fff;
+    border:1px solid var(--line);
+    box-shadow:0 12px 30px rgba(10,43,79,.065);
+  }
+  .exam-timeline{
+    position:relative;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+  .exam-timeline:before{
+    content:"";
+    position:absolute;
+    left:18px;
+    top:23px;
+    bottom:23px;
+    width:2px;
+    background:linear-gradient(180deg,#dfc57f,#d6e3ec);
+  }
+  .exam-step{
+    position:relative;
+    min-height:0;
+    padding:14px 14px 14px 48px;
+    border-radius:15px;
+    background:#f9fbfd;
+    border:1px solid #dce8f0;
+  }
+  .exam-step:before{
+    content:"";
+    position:absolute;
+    left:12px;
+    top:19px;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:#fff;
+    border:4px solid #cfad59;
+    box-shadow:0 0 0 3px #f9fbfd;
+  }
+  .exam-step:after{display:none}
+  .exam-step .time{
+    display:block;
+    color:#9b701f;
+    font-size:12.5px;
+    font-weight:950;
+    letter-spacing:.015em;
+    line-height:1.3;
+  }
+  .exam-step strong{
+    display:block;
+    color:var(--navy);
+    font-size:18px;
+    line-height:1.35;
+    margin:4px 0 2px;
+  }
+  .exam-step span{
+    display:block;
+    color:#526b80;
+    font-size:12.5px;
+    line-height:1.55;
+  }
+  .exam-note-row{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:7px;
+    margin-top:12px;
+  }
+  .exam-note{
+    display:flex;
+    align-items:flex-start;
+    gap:7px;
+    padding:9px 11px;
+    border-radius:12px;
+    background:#eef5fa;
+    border:1px solid #d8e5ee;
+    color:#456278;
+    font-size:12.5px;
+    font-weight:800;
+    line-height:1.5;
+  }
+  .exam-note strong{flex:0 0 auto;color:var(--navy)}
+
+  /* Parent program becomes a separate dark card beneath the exam timeline. */
+  .parent-program{
+    position:relative;
+    overflow:hidden;
+    margin-top:12px;
+    padding:20px 18px;
+    border-radius:20px;
+    background:linear-gradient(145deg,#123b68,#092b4f);
+    color:#fff;
+    box-shadow:0 14px 32px rgba(10,43,79,.16);
+  }
+  .parent-program:after{
+    content:"";
+    position:absolute;
+    width:170px;
+    height:170px;
+    right:-80px;
+    bottom:-95px;
+    border-radius:50%;
+    background:rgba(239,210,143,.09);
+  }
+  .parent-program .kicker{color:#f0d394}
+  .parent-program h3{
+    position:relative;
+    z-index:1;
+    margin:6px 0 9px;
+    color:#fff;
+    font-size:22px;
+    line-height:1.38;
+  }
+  .parent-program p{
+    position:relative;
+    z-index:1;
+    margin:0 0 12px;
+    color:#dce8f2;
+    font-size:13px;
+    line-height:1.65;
+  }
+  .parent-program .parent-slot{
+    position:relative;
+    z-index:1;
+    padding:11px 0;
+    border-top:1px solid rgba(255,255,255,.14);
+  }
+  .parent-program .parent-slot b{
+    display:block;
+    color:#f0d394;
+    font-size:12.5px;
+    font-weight:950;
+  }
+  .parent-topic-list{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:7px;
+    margin-top:7px;
+  }
+  .parent-topic-list span{
+    display:flex;
+    align-items:center;
+    min-height:38px;
+    padding:8px 10px;
+    border-radius:11px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.14);
+    color:#fff;
+    font-size:13px;
+    font-weight:850;
+    line-height:1.45;
+  }
+
+  /* Three arrows: one clear card at a time, optimized for thumb scrolling. */
+  .three-arrows{
+    padding:50px 0 54px;
+    background:#fff;
+  }
+  .arrows-intro{
+    display:block;
+    margin-bottom:20px;
+  }
+  .arrows-intro .section-head{margin:0 0 16px}
+  .arrows-intro .section-head h2{
+    font-size:28px;
+    line-height:1.32;
+    margin:6px 0 10px;
+  }
+  .arrows-intro .section-head h2 br{display:none}
+  .program-chips{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:7px;
+    min-width:0;
+  }
+  .program-chips span{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:38px;
+    padding:8px 7px;
+    border-radius:12px;
+    background:#f3f7fa;
+    border:1px solid #dbe6ee;
+    color:#365873;
+    font-size:12px;
+    font-weight:900;
+    line-height:1.35;
+    text-align:center;
+    white-space:normal;
+  }
+  .arrows-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:11px;
+  }
+  .arrow-card{
+    position:relative;
+    overflow:hidden;
+    padding:20px 18px;
+    border-radius:19px;
+    border:1px solid var(--line);
+    background:#fff;
+    box-shadow:0 10px 28px rgba(10,43,79,.055);
+  }
+  .arrow-card:before{
+    content:attr(data-arrow);
+    position:absolute;
+    right:13px;
+    top:9px;
+    color:#eff3f6;
+    font-size:49px;
+    font-weight:950;
+    line-height:1;
+  }
+  .arrow-card .arrow-kicker{
+    position:relative;
+    color:var(--red);
+    font-size:11px;
+    font-weight:950;
+    letter-spacing:.08em;
+  }
+  .arrow-card h3{
+    position:relative;
+    margin:7px 0 7px;
+    padding-right:35px;
+    color:var(--navy);
+    font-size:21px;
+    line-height:1.35;
+  }
+  .arrow-card p{
+    position:relative;
+    margin:0;
+    color:#4d667b;
+    font-size:13.5px;
+    line-height:1.68;
+  }
+  .arrow-card .arrow-highlight{
+    position:relative;
+    display:inline-flex;
+    margin-top:11px;
+    padding:7px 9px;
+    border-radius:10px;
+    background:#fff7e4;
+    color:#93661b;
+    font-size:12px;
+    font-weight:950;
+    line-height:1.35;
+    border:1px solid #edd9aa;
+  }
+
+  /* Scholarship amounts: a readable 2-column mobile grid instead of a squeezed strip. */
+  .scholarship-strip{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+    margin-top:13px;
+    padding:14px;
+    border-radius:19px;
+    background:linear-gradient(135deg,#0f3865,#0a2b4e);
+    color:#fff;
+    box-shadow:0 13px 30px rgba(10,43,79,.12);
+  }
+  .scholarship-strip .label{
+    grid-column:1/-1;
+    padding:0 0 10px;
+    border-right:0;
+    border-bottom:1px solid rgba(255,255,255,.16);
+    text-align:center;
+  }
+  .scholarship-strip .label b{
+    display:block;
+    color:#f0d394;
+    font-size:11px;
+    letter-spacing:.07em;
+  }
+  .scholarship-strip .label strong{
+    display:block;
+    margin-top:2px;
+    color:#fff;
+    font-size:17px;
+  }
+  .prize{
+    padding:10px 7px;
+    border-radius:12px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.09);
+    text-align:center;
+  }
+  .prize b{
+    display:block;
+    color:#f0d394;
+    font-size:11px;
+    line-height:1.35;
+  }
+  .prize strong{
+    display:block;
+    margin-top:3px;
+    color:#fff;
+    font-size:18px;
+    line-height:1.25;
+  }
+  .scholarship-strip .prize:last-child{grid-column:1/-1}
+
+  .three-arrows-cta{
+    display:block;
+    margin-top:13px;
+    padding:16px;
+    border-radius:16px;
+    background:#f5f9fc;
+    border:1px solid #dbe6ef;
+  }
+  .three-arrows-cta p{
+    margin:0;
+    color:#486278;
+    font-size:13px;
+    line-height:1.65;
+  }
+  .three-arrows-cta p strong{color:var(--navy)}
+  .three-arrows-cta .action{
+    width:100%;
+    min-height:48px;
+    margin-top:12px;
+    white-space:nowrap;
+    font-size:13px;
+  }
+}
+
+
+/* v47 mobile fixed quick navigation — desktop locked */
+.mobile-jump-nav{display:none}
+@media(max-width:650px){
+  /* Existing desktop back-to-top remains untouched; mobile uses a two-way navigator. */
+  .back-top{display:none!important}
+  .mobile-jump-nav{
+    position:fixed;
+    right:12px;
+    bottom:82px;
+    z-index:92;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    width:42px;
+    border:1px solid rgba(255,255,255,.68);
+    border-radius:14px;
+    background:rgba(9,43,79,.90);
+    box-shadow:0 12px 28px rgba(6,27,50,.24);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+  }
+  .mobile-jump-nav a{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:19px;
+    font-weight:950;
+    line-height:1;
+    transition:background-color .16s ease,transform .16s ease;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .mobile-jump-nav a+a{border-top:1px solid rgba(255,255,255,.18)}
+  .mobile-jump-nav a:active{background:rgba(255,255,255,.14);transform:scale(.94)}
+}
+
 </style>
 </head>
 <body id="top">
@@ -645,7 +1185,34 @@ section{padding:80px 0}.pathways{background:#fff}.path-grid{display:grid;grid-te
 <a class="fixed-apply" href="https://docs.google.com/forms/d/1483uHrRwaxCQhuVrhLc0YfWF_wKSaTUdPZ7zO2ynvao/viewform" rel="noopener" target="_blank"><small>115 瀛海盃</small><strong>立即報名</strong><span>隨時都可以</span></a>
 <div class="mobile-apply"><span>115 瀛海盃｜11/14（六）</span><a class="action action-primary with-icon icon-external" href="https://docs.google.com/forms/d/1483uHrRwaxCQhuVrhLc0YfWF_wKSaTUdPZ7zO2ynvao/viewform" rel="noopener" target="_blank">立即報名 115 瀛海盃</a></div>
 <main>
-<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">115 瀛海盃｜小六升國一</div><h1><span class="hero-line">讓不同的孩子，</span><span class="hero-line">走出自己的優勢。</span></h1><p class="hero-quote">升學有成果，天賦有舞台，未來有更多選擇。</p><figure class="mobile-world-hero"><img alt="2026 RoboRAVE Osaka 世界第一" decoding="async" loading="eager" src="assets/world-champion.jpg"/><figcaption>2026 RoboRAVE Osaka｜爬坡機器人挑戰賽 國中組世界第一</figcaption></figure><p class="hero-copy">有的孩子擅長升學，有的喜歡科學、語言、藝術、體育或國際學習。瀛海提供多元而清楚的培養路徑，讓每個孩子都能把自己的長處持續累積。</p><div class="hero-meta"><span class="info-chip">11/14（六）</span><span class="info-chip">小六學生</span><span class="info-chip">瀛海國際高級中等學校</span></div><div class="hero-actions"><a class="action action-primary with-icon icon-external" href="https://docs.google.com/forms/d/1483uHrRwaxCQhuVrhLc0YfWF_wKSaTUdPZ7zO2ynvao/viewform" rel="noopener" target="_blank">立即報名 115 瀛海盃</a><a class="action action-secondary with-icon icon-down" href="#paths">看看孩子可以走哪些路</a></div></div><div class="hero-mosaic"><figure><img alt="2026 RoboRAVE Osaka 世界第一" decoding="async" loading="eager" src="assets/world-champion.jpg"/><figcaption>科學 × 科技｜2026 RoboRAVE Osaka 世界第一</figcaption></figure><figure><img alt="瀛海機器人與科技實作" decoding="async" loading="eager" src="assets/robotics.jpg"/><figcaption>科學 × 科技｜把好奇做成能力</figcaption></figure><figure><img alt="瀛海藝術與創作社團" decoding="async" loading="eager" src="assets/arts-club.jpg"/><figcaption>藝術 × 創作｜讓創意被看見</figcaption></figure></div></div></section>
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">115 瀛海盃｜小六升國一</div><h1><span class="hero-line">讓不同的孩子，</span><span class="hero-line">走出自己的優勢。</span></h1><p class="hero-quote">升學有成果，天賦有舞台，未來有更多選擇。</p><figure class="mobile-world-hero"><img alt="2026 RoboRAVE Osaka 世界第一" decoding="async" loading="eager" src="assets/world-champion.jpg"/><figcaption>2026 RoboRAVE Osaka｜爬坡機器人挑戰賽 國中組世界第一</figcaption></figure><p class="hero-copy">有的孩子擅長升學，有的喜歡科學、語言、藝術、體育或國際學習。瀛海提供多元而清楚的培養路徑，讓每個孩子都能把自己的長處持續累積。</p><div class="desktop-event-summary"><b>11/14（六）08:30 開始</b><span>國語・數學・英語與自然｜五年級至六年級上學期</span></div><div class="hero-meta"><span class="info-chip">11/14（六）</span><span class="info-chip">小六學生</span><span class="info-chip">瀛海國際高級中等學校</span></div><div class="hero-actions"><a class="action action-primary with-icon icon-external" href="https://docs.google.com/forms/d/1483uHrRwaxCQhuVrhLc0YfWF_wKSaTUdPZ7zO2ynvao/viewform" rel="noopener" target="_blank">立即報名 115 瀛海盃</a><a class="action action-secondary with-icon icon-down desktop-exam-link" href="#exam-info">查看考試流程</a><a class="action action-secondary with-icon icon-down mobile-path-link" href="#paths">看看孩子可以走哪些路</a></div></div><div class="hero-mosaic"><figure><img alt="2026 RoboRAVE Osaka 世界第一" decoding="async" loading="eager" src="assets/world-champion.jpg"/><figcaption>科學 × 科技｜2026 RoboRAVE Osaka 世界第一</figcaption></figure><figure><img alt="瀛海機器人與科技實作" decoding="async" loading="eager" src="assets/robotics.jpg"/><figcaption>科學 × 科技｜把好奇做成能力</figcaption></figure><figure><img alt="瀛海藝術與創作社團" decoding="async" loading="eager" src="assets/arts-club.jpg"/><figcaption>藝術 × 創作｜讓創意被看見</figcaption></figure></div></div></section>
+
+<section class="exam-info desktop-only-section" id="exam-info"><div class="wrap">
+  <div class="section-head"><div class="kicker">115 瀛海盃｜考試資訊</div><h2>11/14 當天怎麼進行？</h2><p class="lead">孩子專心應試，家長同步認識瀛海。先把時間、科目與考試範圍一次看清楚，報名前就能安心安排。</p></div>
+  <div class="exam-layout">
+    <div class="exam-main">
+      <div class="exam-timeline">
+        <div class="exam-step"><span class="time">08:30–09:20</span><strong>國語</strong><span>50 分鐘</span></div>
+        <div class="exam-step"><span class="time">09:30–10:20</span><strong>數學</strong><span>50 分鐘</span></div>
+        <div class="exam-step"><span class="time">10:30–11:30</span><strong>英語與自然</strong><span>60 分鐘</span></div>
+        <div class="exam-step"><span class="time">11:40–12:40</span><strong>劍橋國際英語免費檢定</strong><span>聽 15 分・讀 25 分・寫 20 分｜可自由參加</span></div>
+      </div>
+      <div class="exam-note-row"><span class="exam-note"><strong>考試範圍</strong> 五年級至六年級上學期</span><span class="exam-note"><strong>中間休息</strong> 09:20–09:30、10:20–10:30</span><span class="exam-note"><strong>對象</strong> 國小六年級學生</span></div>
+    </div>
+    <aside class="parent-program"><div class="kicker">家長同步活動</div><h3>孩子考試的同時，家長可以更完整認識瀛海。</h3><p>不需要在外等候一個上午；學校同步安排校務、升學差異與國際教育說明。</p><div class="parent-slot"><b>08:40–12:00</b><div class="parent-topic-list"><span>校務與升學差異優勢說明</span><span>劍橋國際教育說明</span></div></div><div class="parent-slot"><b>12:00 起</b><div class="parent-topic-list"><span>國際教育學程中心參觀</span></div></div></aside>
+  </div>
+</div></section>
+
+<section class="three-arrows desktop-only-section" id="three-arrows"><div class="wrap">
+  <div class="arrows-intro"><div class="section-head"><div class="kicker">瀛海三支箭｜學習無上限</div><h2>瀛海盃不只是一場測驗，<br/>更是下一階段學習資源的起點。</h2><p class="lead">從找到方向，到實現理想，以六年一貫學程、獎學金與學習支持，陪孩子把優勢持續累積。</p></div><div class="program-chips"><span>醫科預備班</span><span>科學菁英預備班</span><span>國際雙語預備班</span><span>六年一貫學程</span></div></div>
+  <div class="arrows-grid">
+    <article class="arrow-card" data-arrow="01"><div class="arrow-kicker">第一箭｜高額獎學金</div><h3>最高 12 萬元獎學金</h3><p>依瀛海盃成績核發獎學金，讓孩子的努力直接轉化為下一階段的學習支持。</p><span class="arrow-highlight">另設優良獎 5,000 元</span></article>
+    <article class="arrow-card" data-arrow="02"><div class="arrow-kicker">第二箭｜住宿費支持</div><h3>第一學期住宿費支持</h3><p>突破就學地域限制；床位有限，車程 45 分鐘以上且符合資格者，可享第一學期免住宿費。</p><span class="arrow-highlight">每學期住宿費約 6,000 多元</span></article>
+    <article class="arrow-card" data-arrow="03"><div class="arrow-kicker">第三箭｜學習王系統</div><h3>三年線上學習支持</h3><p>免費提供「學習王」線上學習系統，支援晚自習進度超前、自學與補救學習。</p><span class="arrow-highlight">三年全套價值超過 20 萬元</span></article>
+  </div>
+  <div class="scholarship-strip"><div class="label"><b>瀛海盃獎學金</b><strong>級距一覽</strong></div><div class="prize"><b>特等獎｜30 名</b><strong>12 萬</strong></div><div class="prize"><b>金牌獎｜30 名</b><strong>9 萬</strong></div><div class="prize"><b>銀牌獎｜30 名</b><strong>6 萬</strong></div><div class="prize"><b>銅牌獎｜30 名</b><strong>3 萬</strong></div><div class="prize"><b>優良獎｜180 名</b><strong>5,000</strong></div></div>
+  <div class="three-arrows-cta"><p><strong>先看懂活動，再看見孩子可以走多遠。</strong><br/>下面接著看瀛海六大發展路徑與已經累積的真實成果。</p><a class="action action-primary with-icon icon-external" href="https://docs.google.com/forms/d/1483uHrRwaxCQhuVrhLc0YfWF_wKSaTUdPZ7zO2ynvao/viewform" rel="noopener" target="_blank">立即報名 115 瀛海盃</a></div>
+</div></section>
 <section class="pathways" id="paths"><div class="wrap"><div class="section-head"><div class="kicker">多元發展路徑</div><h2>孩子的優勢，不只一種。</h2><p class="lead">有的孩子在會考與升學發光，有的在科學、語言、藝術、體育或國際教育找到舞台。瀛海把不同方向，都做成可以持續累積的學習路徑。</p></div><div class="path-grid">
 <article class="path-card"><div class="num">01｜升學與醫學</div><h3>把目標走成結果</h3><p>從國中會考、高中升學，到醫學系與各類大學科系，讓有明確目標的孩子穩定累積實力。</p><div class="proofline">115 年會考榜單｜115 年大學升學成果｜醫學系學生故事</div></article>
 <article class="path-card"><div class="num">02｜科學與科技</div><h3>把好奇做成能力</h3><p>從觀察、實驗、研究到競賽，把「會想」變成「做得出來」，讓孩子用實力驗證自己的想法。</p><div class="proofline">106–113 年科展八連霸｜2026 RoboRAVE Osaka 世界第一</div></article>
@@ -692,14 +1259,16 @@ section{padding:80px 0}.pathways{background:#fff}.path-grid{display:grid;grid-te
 <article class="inline-video-card"><div class="inline-video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/sDfBWfkFFFU?si=zHs7ayJoGx3p9Nl0" title="114 年瀛海國際中學歷屆金榜"></iframe></div><div class="inline-video-body"><div class="video-tag">歷屆成果</div><h3>114 年｜瀛海國際中學歷屆金榜</h3><p>從歷屆錄取表現，看見升學成果長期、穩定的累積與延續。</p></div></article>
 <article class="inline-video-card"><div class="inline-video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZfnNUrmnK0E?si=aIzAAoLOuVzBYcqT" title="114 年瀛海國際中學介紹"></iframe></div><div class="inline-video-body"><div class="video-tag">認識瀛海</div><h3>114 年｜瀛海國際中學介紹</h3><p>從校園、課程到學生培養，完整認識孩子每天學習與成長的環境。</p></div></article>
 </div><div class="video-note">影片皆可直接在本頁播放；若個別瀏覽器限制播放，可點播放器中的 YouTube 標誌改至 YouTube 觀看。</div></div></section>
-<section class="parent-voices"><div class="wrap"><div class="section-head"><div class="kicker">家長真實分享</div><h2>成果之外，也聽聽走過這條路的家長怎麼說。</h2><p class="lead">從學習適應、課程選擇到升學準備，家長的真實經驗，能讓您更具體地了解孩子在瀛海的學習與成長。</p></div><div class="voice-grid"><article class="voice-video-card"><div class="voice-video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/7dS0f9yiq6s?rel=0" title="瀛海國際中學 × 劍橋國際家長訪談"></iframe></div><div class="voice-video-body"><h3 class="voice-title voice-desktop-title voice-title-dual"><span>瀛海國際中學 × 劍橋國際｜家長訪談</span></h3><h3 class="voice-mobile-title"><span class="voice-main">瀛海 × 劍橋國際中學｜家長訪談</span></h3><p>從國際教育、課程銜接與孩子成長，聽家長分享實際選擇與感受。</p></div></article><article class="voice-video-card"><div class="voice-video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/y4xQtwImvqA?rel=0" title="113 年瀛海國際中學家長訪談"></iframe></div><div class="voice-video-body"><h3 class="voice-title voice-desktop-title voice-title-single">瀛海國際中學家長訪談</h3><h3 class="voice-mobile-title"><span class="voice-year"><span class="voice-main">瀛海國際中學｜家長訪談</span></h3><p>從家長視角，看孩子在瀛海的學習、成長與升學準備。</p></div></article></div></div></section>
+<section class="parent-voices"><div class="wrap"><div class="section-head"><div class="kicker">家長真實分享</div><h2>成果之外，也聽聽走過這條路的家長怎麼說。</h2><p class="lead">從學習適應、課程選擇到升學準備，家長的真實經驗，能讓您更具體地了解孩子在瀛海的學習與成長。</p></div><div class="voice-grid"><article class="voice-video-card"><div class="voice-video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/7dS0f9yiq6s?rel=0" title="瀛海國際中學 × 劍橋國際家長訪談"></iframe></div><div class="voice-video-body"><h3 class="voice-title voice-desktop-title voice-title-dual"><span>瀛海國際中學</span><span>× 劍橋國際｜家長訪談</span></h3><h3 class="voice-mobile-title"><span class="voice-main">瀛海 × 劍橋國際中學｜家長訪談</span></h3><p>從國際教育、課程銜接與孩子成長，聽家長分享實際選擇與感受。</p></div></article><article class="voice-video-card"><div class="voice-video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/y4xQtwImvqA?rel=0" title="瀛海國際中學家長訪談"></iframe></div><div class="voice-video-body"><h3 class="voice-title voice-desktop-title voice-title-single">瀛海國際中學｜家長訪談</h3><h3 class="voice-mobile-title"><span class="voice-main">瀛海國際中學｜家長訪談</span></h3><p>從家長視角，看孩子在瀛海的學習、成長與升學準備。</p></div></article></div></div></section>
 <section class="talent-proof"><div class="wrap"><div class="section-head"><div class="kicker">多元成果證明</div><h2>不是把孩子變得一樣，而是讓不同的天賦都能發光。</h2><p class="lead">科學、科技、語文、英語、藝術、體育與品格，不只是興趣，也都能一步步累積成孩子未來的底氣。</p></div><div class="big-proof-grid"><article class="photo-proof"><img alt="RoboRAVE Osaka 世界冠軍" decoding="async" loading="lazy" src="assets/world-champion.jpg"/><div class="text"><b>SCIENCE × TECHNOLOGY</b><strong>2026 RoboRAVE Osaka 世界第一</strong><span>爬坡機器人挑戰賽｜國中組世界第一名</span></div></article><article class="photo-proof"><img alt="瀛海科學探究" decoding="async" loading="lazy" src="assets/science-demo.jpg"/><div class="text"><b>SCIENCE FAIR</b><strong>106–113 年科展八連霸</strong><span>連續八年榮獲臺南市科展國中組團體第一名</span></div></article></div><div class="mini-proof-grid"><article class="mini-proof"><img alt="學生公開表達活動" decoding="async" loading="lazy" src="assets/student-leadership.jpg"/><div class="body"><h3>語文與英語</h3><p>115 年市長盃國中一二年級 B 組英語演說第一名，另有多項國語、台語、客語與英語競賽成果。</p></div></article><article class="mini-proof"><img alt="瀛海學生舞台演出" decoding="async" loading="lazy" src="assets/music-stage.jpg"/><div class="body"><h3>藝術與創作</h3><p>114 年臺南市學生美展涵蓋平面設計、水墨、版畫、西畫、書法等多項成果。</p></div></article><article class="mini-proof"><img alt="瀛海學生棒球與團隊競賽" decoding="async" loading="lazy" src="assets/baseball.jpg"/><div class="body"><h3>體育與團隊</h3><p>115 年 TEEBALL 第二名、排球女子組第三名，並持續參與田徑、棒球等代表隊賽事。</p></div></article><article class="mini-proof"><img alt="瀛海海洋志工" decoding="async" loading="lazy" src="assets/ocean-volunteer.jpg"/><div class="body"><h3>品格與行動</h3><p>從社團、台江議題到海洋志工，讓責任、合作與公共參與成為孩子能實踐的日常。</p></div></article></div></div></section>
 <section class="intl" id="international"><div class="wrap"><div class="section-head"><div class="kicker">國際教育</div><h2>從臺南，連結世界。</h2><p class="lead">如果孩子對語言、跨文化與國際升學有興趣，瀛海提供從國中雙語、高中雙語到劍橋國際課程的完整銜接。</p></div><div class="intl-showcase"><figure class="intl-feature-photo"><img alt="國際教育實驗與跨文化學習" decoding="async" loading="lazy" src="assets/international-lab.jpg"/><figcaption><b>雙語 × 實作</b><strong>在真實情境中使用語言，也把學科能力一起帶上來。</strong></figcaption></figure><div class="intl-side"><div class="intl-copy"><div class="kicker">語言 × 課程 × 全球升學</div><h3>讓世界，成為孩子的升學選項。</h3><p>以國內課綱為基礎，搭配雙語學習、劍橋國際課程與跨文化交流，讓語言能力、學科實力與國際視野一起累積。</p><div class="intl-points"><span>國中雙語預備</span><span>高中雙語實驗</span><span>劍橋國際課程</span><span>全球升學銜接</span></div></div><div class="intl-side-photos"><figure><img alt="國際教育跨文化課堂" decoding="async" loading="lazy" src="assets/international-classroom-2.jpg"/><figcaption>跨文化課堂｜在互動中使用語言</figcaption></figure><figure><img alt="國際教育交流活動" decoding="async" loading="lazy" src="assets/international-classroom-3.jpg"/><figcaption>國際交流｜把視野帶到更遠的地方</figcaption></figure></div></div></div><div class="link-grid"><a class="link-card" href="https://forms.gle/DyEBpCu6BycMW6X76" rel="noopener" target="_blank"><div><b>INFO SESSION</b><strong>劍橋國際教育說明會</strong></div><span>查看說明會資訊與完成報名</span><span class="link-action">點擊開啟 <span class="external-mark" aria-hidden="true">↗</span></span></a><a class="link-card" href="https://www.facebook.com/share/1FDUqBUmKq/?mibextid=wwXIfr" rel="noopener" target="_blank"><div><b>FACEBOOK</b><strong>劍橋國際國高中</strong></div><span>了解國高中國際教育，追蹤課程、活動及最新消息</span><span class="link-action">前往 Facebook <span class="external-mark" aria-hidden="true">↗</span></span></a><a class="link-card" href="https://www.facebook.com/share/14oQk73UHuG/?mibextid=wwXIfr" rel="noopener" target="_blank"><div><b>FACEBOOK</b><strong>劍橋國際國小部</strong></div><span>了解國小國際教育，追蹤課程、活動及最新消息</span><span class="link-action">前往 Facebook <span class="external-mark" aria-hidden="true">↗</span></span></a><a class="link-card line" href="https://lin.ee/otnQBLv" rel="noopener" target="_blank"><div><b>LINE</b><strong>官方 LINE 諮詢</strong></div><span>直接加入 LINE 詢問</span><span class="link-action">加入 LINE 諮詢 <span class="external-mark" aria-hidden="true">↗</span></span></a></div></div></section>
-<section class="final" id="apply"><div class="wrap"><div class="final-box"><div><div class="kicker">115 瀛海盃</div><h2>一場挑戰，先看見實力；<br/>一次參與，多看見未來。</h2><p>讓孩子親自來試一次，了解自己的學習狀態與優勢，也讓家長更具體地看見下一階段可以怎麼走。115 瀛海盃，現在就替孩子保留一個探索自己的機會。</p></div><a class="action action-primary with-icon icon-external" href="https://docs.google.com/forms/d/1483uHrRwaxCQhuVrhLc0YfWF_wKSaTUdPZ7zO2ynvao/viewform" rel="noopener" target="_blank">立即報名 115 瀛海盃</a></div></div></section>
+<section class="final" id="apply"><div class="wrap"><div class="final-box"><div><div class="kicker">115 瀛海盃</div><h2>一場挑戰，先看見實力；<br/>一次參與，多看見未來。</h2><p><span class="final-copy-line">讓孩子親自來試一次，了解自己的學習狀態與優勢，也讓家長更具體地看見下一階段可以怎麼走。</span><span class="final-copy-line final-copy-emphasis">115 瀛海盃，現在就替孩子保留一個探索自己的機會。</span></p></div><a class="action action-primary with-icon icon-external" href="https://docs.google.com/forms/d/1483uHrRwaxCQhuVrhLc0YfWF_wKSaTUdPZ7zO2ynvao/viewform" rel="noopener" target="_blank">立即報名 115 瀛海盃</a></div></div></section>
 </main>
 <a aria-label="回到最上方" class="back-top" href="#top" id="backTop" title="回到最上方">↑</a>
+<div class="mobile-jump-nav" id="mobileJumpNav" aria-label="快速頁面導覽"><a href="#top" id="mobileJumpTop" aria-label="回到最上方" title="回到最上方">↑</a><a href="#apply" id="mobileJumpBottom" aria-label="前往報名區" title="前往報名區">↓</a></div>
 <footer><div class="wrap foot"><div><strong>瀛海國際高級中等學校</strong>｜YING HAI INTERNATIONAL HIGH SCHOOL</div><div>臺南市安南區長溪路一段 76 號｜(06) 256-8582 轉 103、104</div><div class="design-credit">Web Design &amp; Direction｜Ming Kuo · 2026</div></div></footer>
 <script>
-const backTop=document.getElementById('backTop');if(backTop)window.addEventListener('scroll',()=>{backTop.classList.toggle('show',window.scrollY>700)});
+const backTop=document.getElementById('backTop');
+if(backTop)window.addEventListener('scroll',()=>{backTop.classList.toggle('show',window.scrollY>700)});
 </script>
 </body></html>
